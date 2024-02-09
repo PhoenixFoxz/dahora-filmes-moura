@@ -38,8 +38,9 @@ const estilosInicio = StyleSheet.create({
 
   titulo: {
     fontFamily: "Monoton-Regular",
-    fontSize: 36,
+    fontSize: 33,
     color: "#5a51a6",
+    textAlign: "center",
   },
 
   viewRodape: {
