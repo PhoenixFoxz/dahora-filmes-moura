@@ -36,6 +36,12 @@ const estilosInicio = StyleSheet.create({
     color: "#fff",
   },
 
+  titulo: {
+    fontFamily: "Monoton-Regular",
+    fontSize: 36,
+    color: "#5a51a6",
+  },
+
   viewRodape: {
     flex: 0.15,
     flexDirection: "row",
