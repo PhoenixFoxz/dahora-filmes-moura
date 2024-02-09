@@ -28,8 +28,6 @@ const estilosInicio = StyleSheet.create({
     marginRight: "auto",
   },
   botao: {
-    borderStyle: "solid",
-    borderWidth: 2,
     padding: 16,
     backgroundColor: "#4d4491",
     borderRadius: 15,

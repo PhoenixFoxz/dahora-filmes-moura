@@ -9,10 +9,17 @@ import {
 } from "react-native";
 import { MaterialCommunityIcons, Fontisto } from "@expo/vector-icons";
 import logo from "./assets/images/logo.png";
-
 import { estilosInicio } from "./src/stylesheet/estilos";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
+  const [fontLoaded, fontError] = useFonts({
+    "Monoton-Regular": require("./assets/fonts/Monoton-Regular.ttf"),
+  });
+
   return (
     <>
       <StatusBar barStyle="light-content" />
