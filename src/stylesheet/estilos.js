@@ -41,7 +41,7 @@ const estilosInicio = StyleSheet.create({
 
   titulo: {
     fontFamily: "Monoton-Regular",
-    fontSize: 33,
+    fontSize: 35,
     color: "#5a51a6",
     textAlign: "center",
   },
@@ -51,10 +51,13 @@ const estilosInicio = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    backgroundColor: "red",
-    width: "80%",
+    backgroundColor: "#5a51a6",
+    width: "100%",
     marginLeft: "auto",
     marginRight: "auto",
+  },
+  botaoRodape: {
+    padding: 30,
   },
 });
 

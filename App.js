@@ -7,7 +7,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { MaterialCommunityIcons, Fontisto } from "@expo/vector-icons";
+import { MaterialCommunityIcons, Fontisto, Ionicons } from "@expo/vector-icons";
 import logo from "./assets/images/logo.png";
 import { estilosInicio } from "./src/stylesheet/estilos";
 import { useFonts } from "expo-font";
@@ -80,8 +80,20 @@ export default function App() {
           </Pressable>
         </View>
         <View style={estilosInicio.viewRodape}>
-          <Button title="privacidade" />
-          <Button title="Sobre" />
+          <Pressable style={estilosInicio.botaoRodape}>
+            <Text style={estilosInicio.textoBotao}>
+              <Ionicons name="lock-closed" size={16} color="white" />
+              {""}
+              Privacidade
+            </Text>
+          </Pressable>
+          <Pressable style={estilosInicio.botaoRodape}>
+            <Text style={estilosInicio.textoBotao}>
+              <Ionicons name="information-circle" size={16} color="white" />
+              {""}
+              Sobre
+            </Text>
+          </Pressable>
         </View>
       </SafeAreaView>
     </>
