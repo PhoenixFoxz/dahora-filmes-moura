@@ -1,4 +1,6 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
+import { A } from "@expo/html-elements";
+import movieDB from "../../assets/images/logo-tmdb.png";
 import React from "react";
 import SafeContainer from "../components/SafeContainer";
 import { estilosInicio } from "../stylesheet/estilos";
@@ -14,6 +16,9 @@ export default function Sobre() {
           filmes existentes na base de dados pública disponibilizada pelo site
           The Movie Database (TMDb).
         </Text>
+        <A style={estilosInicio.logoMovieDB} href="https://www.themoviedb.org/">
+          <Image source={movieDB} />
+        </A>
         <Text style={estilosInicio.textoSobre}>
           Ao localizar um filme, o usuário pode visualizar informações como
           título, data de lançamento, nota média de avaliação e uma breve
@@ -24,7 +29,9 @@ export default function Sobre() {
           O aplicativo poderá receber novos recursos conforme o feedback e
           demanda dos usuários.
         </Text>
-        <Text style={estilosInicio.textoSobre}>Dá Hora Filmes &copy; 2024</Text>
+        <Text style={estilosInicio.textoAutoral}>
+          Dá Hora Filmes &copy; 2024
+        </Text>
       </View>
     </SafeContainer>
   );

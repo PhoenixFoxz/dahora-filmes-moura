@@ -80,6 +80,18 @@ const estilosInicio = StyleSheet.create({
     fontWeight: "bold",
     color: "#5351a6",
   },
+  textoAutoral: {
+    marginVertical: 50,
+    textAlign: "center",
+  },
+  logoMovieDB: {
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginBottom: 10,
+    marginTop: 10,
+    width: "100%",
+    height: "35%",
+  },
 });
 
 export { estilosInicio };
