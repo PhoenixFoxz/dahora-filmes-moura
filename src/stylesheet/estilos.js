@@ -63,6 +63,23 @@ const estilosInicio = StyleSheet.create({
   botaoRodape: {
     padding: 30,
   },
+  subContainer: {
+    flex: 1,
+    padding: 16,
+  },
+  subtitulo: {
+    fontFamily: "NotoSans",
+    fontWeight: "bold",
+    marginVertical: 8,
+    fontSize: 18,
+  },
+  textoSobre: {
+    marginVertical: 8,
+  },
+  nomeApp: {
+    fontWeight: "bold",
+    color: "#5351a6",
+  },
 });
 
 export { estilosInicio };
