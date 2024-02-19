@@ -57,6 +57,8 @@ const estilosInicio = StyleSheet.create({
     width: "100%",
     marginLeft: "auto",
     marginRight: "auto",
+    borderTopRightRadius: 15,
+    borderTopLeftRadius: 15,
   },
   botaoRodape: {
     padding: 30,
