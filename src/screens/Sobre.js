@@ -16,9 +16,9 @@ export default function Sobre() {
           filmes existentes na base de dados pública disponibilizada pelo site
           The Movie Database (TMDb).
         </Text>
-        <A style={estilosInicio.logoMovieDB} href="https://www.themoviedb.org/">
-          <Image source={movieDB} />
-        </A>
+        <View style={estilosInicio.viewMovieDB}>
+          <Image source={movieDB} style={estilosInicio.logoMovieDB} />
+        </View>
         <Text style={estilosInicio.textoSobre}>
           Ao localizar um filme, o usuário pode visualizar informações como
           título, data de lançamento, nota média de avaliação e uma breve

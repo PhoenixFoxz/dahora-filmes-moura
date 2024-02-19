@@ -84,13 +84,13 @@ const estilosInicio = StyleSheet.create({
     marginVertical: 50,
     textAlign: "center",
   },
+  viewMovieDB: {
+    alignItems: "center",
+    marginVertical: 30,
+  },
   logoMovieDB: {
-    marginLeft: "auto",
-    marginRight: "auto",
-    marginBottom: 10,
-    marginTop: 10,
-    width: "100%",
-    height: "35%",
+    maxWidth: "100%",
+    maxHeight: "100%",
   },
 });
 
