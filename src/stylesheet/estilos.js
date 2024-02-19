@@ -33,7 +33,10 @@ const estilosInicio = StyleSheet.create({
     borderRadius: 15,
   },
   textoBotao: {
+    fontFamily: "NotoSans",
     color: "#fff",
+    fontWeight: "bold",
+    fontSize: 16,
   },
 
   titulo: {
