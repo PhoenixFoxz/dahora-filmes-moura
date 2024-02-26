@@ -2,6 +2,12 @@
 
 Exeplo de App nativo criado com react Native Expo.
 
+## 03-componentes-de-telas
+
+- Criação das telas básicas: Sobre e Privacidade
+- Componente `ScrollView` para conteúdos maiores que a tela com suporte à rolagem
+- Componente `Linking` para criação de link para a web.
+
 ## 02-customização-estilos-logo-fonte-icones-pressable
 
 ### Utilização de fontes adicionais
