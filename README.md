@@ -15,6 +15,18 @@ Atualmente (Fevereiro/2024) a biblioteca mais usada e considerada padrão é a *
 - React Navigation: https://reactnavigation.org/
 - Expo Rounter: https://docs.expo.dev/router/introduction/
 
+### Como usar o React Navigation com navegação Stack
+
+#### DPacotes de instalação
+
+React Navigation: `npm install @react-navigation/native`
+
+Dependências para navegação:
+
+`npx expo install react-native-screens react-native-safe-area-context`
+
+Mecanismo de navegação Stack: `npm install @react-navigation/native-stack`
+
 ## 03-componentes-de-telas
 
 - Criação das telas básicas: Sobre e Privacidade
