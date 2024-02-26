@@ -92,6 +92,27 @@ const estilosInicio = StyleSheet.create({
     maxWidth: "100%",
     maxHeight: "100%",
   },
+  procuraFilmes: {
+    flexDirection: "column",
+    alignItems: "flex-end",
+  },
+  espacamentoFilmes: {
+    margin: 10,
+    flex: 1,
+    padding: 16,
+  },
+  textoFilmes: {
+    marginBottom: 10,
+  },
+  formFilmes: {
+    height: 70,
+    width: "50%",
+    marginLeft: "10%",
+  },
+  iconFilmes: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
 });
 
 export { estilosInicio };

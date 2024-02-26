@@ -13,7 +13,10 @@ export default function Home({ navigation }) {
         <Text style={estilosInicio.titulo}>Dá Hora Filmes</Text>
       </View>
       <View style={estilosInicio.viewBotoes}>
-        <Pressable style={estilosInicio.botao}>
+        <Pressable
+          style={estilosInicio.botao}
+          onPress={() => navigation.navigate("Filmes")}
+        >
           <View
             style={{
               flexDirection: "row",
