@@ -61,7 +61,7 @@ const estilosInicio = StyleSheet.create({
     borderTopLeftRadius: 15,
   },
   botaoRodape: {
-    padding: 30,
+    padding: 17,
   },
   subContainer: {
     flex: 1,

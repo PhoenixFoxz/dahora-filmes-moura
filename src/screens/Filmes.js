@@ -26,10 +26,14 @@ export default function Filmes() {
           Localize um filme que você viu ou gostaria de ver!
         </Text>
         <View style={estilosInicio.viewForm}>
-          <Ionicons name="film" size={45} color="#5351a6" />
+          <Ionicons name="film" size={45} color="#4d4491" />
           <TextInput
             style={estilosInicio.campo}
             placeholder="Digite o filme"
+            placeholderTextColor="#4d4491"
+            maxLength={40}
+            autoFocus
+            enterKeyHint="search"
             onChangeText={(newText) => setText(newText)}
             defaultValue={text}
           />
