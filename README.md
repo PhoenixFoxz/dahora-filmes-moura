@@ -2,6 +2,17 @@
 
 Exeplo de App nativo criado com react Native Expo.
 
+## 05-desafio--tela-BuscarFilmes
+
+### Solução: recursos utilizados
+
+- Componentes/Recursos nativos: `TextInput`, `Button`, `Vibration` e `Alert`
+
+- Eventos:
+  - `onChangeText` no `TextInput` para captura em tempo real do nome do filme digitado e atualização no `state` usando a função `filmeDigitado`
+  - `onPress` no `Button` para acionamento da função `buscarFilmes`
+  - `onSubmitEditing` no `TextInput` para acionamento da função `buscarFilmes`
+
 ## 04-recursos-de-navegação
 
 Para gerenciar os recursos de navegação é necessário usar uma biblioteca de navegação.
