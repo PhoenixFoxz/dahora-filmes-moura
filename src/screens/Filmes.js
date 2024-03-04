@@ -5,15 +5,31 @@ import SafeContainer from "../components/SafeContainer";
 import { estilosInicio } from "../stylesheet/estilos";
 
 export default function Filmes() {
-  const [text, setText] = useState("");
+  const [filme, setFilme] = useState("");
 
-  const pesquisar = () => {
-    if (text === "") {
-      Alert.alert("Ops!", `Você não pesquisou nada`);
+  // Capturando e registrando em state o filme que o usuário deseja pesquisar
+  const filmeDigitado = (valorDigitado) => {
+    // valorDigitado (nome pode ser qualquer um)
+    // é um parâmetro automático vindo do evento onChargeText
+    setFilme(valorDigitado);
+  };
+
+  // const pesquisar = () => {
+  //   if (filme === "") {
+  //     Alert.alert("Ops!", `Você não pesquisou nada`);
+  //     Vibration.vibrate(500);
+  //   } else {
+  //     Alert.alert("Você pesquisou: ", `${filme}`);
+  //   }
+  // };
+
+  const buscarFilmes = () => {
+    if (!filme) {
       Vibration.vibrate(500);
-    } else {
-      Alert.alert("Você pesquisou: ", `${text}`);
+      return Alert.alert("Ops!", "Você deve digitar um filme!");
     }
+
+    Alert.alert("Você procurou por:", filme);
   };
 
   return (
@@ -34,11 +50,11 @@ export default function Filmes() {
             maxLength={40}
             autoFocus
             enterKeyHint="search"
-            onChangeText={(newText) => setText(newText)}
-            defaultValue={text}
+            onSubmitEditing={buscarFilmes}
+            onChangeText={filmeDigitado}
           />
         </View>
-        <Button title="Procurar" color="#4d4491" onPress={pesquisar} />
+        <Button title="Procurar" color="#4d4491" onPress={buscarFilmes} />
       </View>
     </SafeContainer>
   );
