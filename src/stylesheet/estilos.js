@@ -104,12 +104,15 @@ const estilosInicio = StyleSheet.create({
   textoFilmes: {
     marginBottom: 10,
   },
-  formFilmes: {
-    height: 70,
-    width: "50%",
-    marginLeft: "10%",
+  campo: {
+    margin: 10,
+    flex: 0.95,
+    borderRadius: 10,
+    borderWidth: 3,
+    borderColor: "#5351a6",
+    padding: 8,
   },
-  iconFilmes: {
+  viewForm: {
     flexDirection: "row",
     alignItems: "center",
   },

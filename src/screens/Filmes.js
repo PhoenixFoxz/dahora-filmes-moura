@@ -1,4 +1,4 @@
-import { TextInput, Text, View, Button, Alert } from "react-native";
+import { TextInput, Text, View, Button, Alert, Vibration } from "react-native";
 import React, { useState } from "react";
 import { Ionicons } from "@expo/vector-icons";
 import SafeContainer from "../components/SafeContainer";
@@ -9,7 +9,8 @@ export default function Filmes() {
 
   const pesquisar = () => {
     if (text === "") {
-      Alert.alert("Você não pesquisou nada");
+      Alert.alert("Ops!", `Você não pesquisou nada`);
+      Vibration.vibrate(500);
     } else {
       Alert.alert("Você pesquisou: ", `${text}`);
     }
@@ -24,10 +25,10 @@ export default function Filmes() {
         <Text style={estilosInicio.textoFilmes}>
           Localize um filme que você viu ou gostaria de ver!
         </Text>
-        <View style={estilosInicio.iconFilmes}>
+        <View style={estilosInicio.viewForm}>
           <Ionicons name="film" size={45} color="#5351a6" />
           <TextInput
-            style={estilosInicio.formFilmes}
+            style={estilosInicio.campo}
             placeholder="Digite o filme"
             onChangeText={(newText) => setText(newText)}
             defaultValue={text}
