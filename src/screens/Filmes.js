@@ -4,7 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import SafeContainer from "../components/SafeContainer";
 import { estilosInicio } from "../stylesheet/estilos";
 
-export default function Filmes() {
+export default function Filmes({ navigation }) {
   const [filme, setFilme] = useState("");
 
   // Capturando e registrando em state o filme que o usuário deseja pesquisar
@@ -24,21 +24,23 @@ export default function Filmes() {
   // };
 
   const buscarFilmes = () => {
+    // Se o state filme não ofr indicado
     if (!filme) {
-      Vibration.vibrate(500);
+      Vibration.vibrate(250);
       return Alert.alert("Ops!", "Você deve digitar um filme!");
     }
 
-    Alert.alert("Você procurou por:", filme);
+    /* Redirecionando para a tela de Resultados passando o filme para ela através do segundo parâmetro do método navigate. Obs.: não se esqueça de definir a prop navigation no componente */
+    navigation.navigate("Resultados", { filme });
   };
 
   return (
     <SafeContainer>
       <View style={estilosInicio.espacamentoFilmes}>
-        <Text style={estilosInicio.textoFilmes}>
+        <Text style={estilosInicio.texto}>
           Star Trek? O Podesoro Chefão? A trilogia Senhor dos Anéis?
         </Text>
-        <Text style={estilosInicio.textoFilmes}>
+        <Text style={estilosInicio.texto}>
           Localize um filme que você viu ou gostaria de ver!
         </Text>
         <View style={estilosInicio.viewForm}>

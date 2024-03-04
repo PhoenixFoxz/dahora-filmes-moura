@@ -73,7 +73,7 @@ const estilosInicio = StyleSheet.create({
     marginVertical: 8,
     fontSize: 18,
   },
-  textoSobre: {
+  texto: {
     marginVertical: 8,
   },
   nomeApp: {
@@ -100,9 +100,6 @@ const estilosInicio = StyleSheet.create({
     margin: 10,
     flex: 1,
     padding: 16,
-  },
-  textoFilmes: {
-    marginBottom: 10,
   },
   campo: {
     margin: 10,
