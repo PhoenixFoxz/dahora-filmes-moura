@@ -20,7 +20,7 @@ Exeplo de App nativo criado com react Native Expo.
 #### Exibição dos resultados
 
 - Utilização do componente `FlatList` para listagem dinâmica dos resultados
-- Criação do componente `CardFilme` como uso de prop (`filme`) com carregamento do `title` e do `poster-path` (imagem) de cada filme.
+- Criação do componente `CardFilme` com uso de prop (`filme`) com carregamento do `title` e do `poster-path` (imagem) de cada filme.
 
 ## 05-desafio--tela-BuscarFilmes
 
