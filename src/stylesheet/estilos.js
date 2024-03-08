@@ -126,7 +126,7 @@ const estilosInicio = StyleSheet.create({
   },
   image: {
     height: 150,
-    width: 100,
+    width: 115,
     flex: 1,
   },
   corpo: {
