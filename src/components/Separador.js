@@ -9,4 +9,3 @@ export default function Separador() {
   );
 }
 
-const styles = StyleSheet.create({});
