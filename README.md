@@ -17,6 +17,11 @@ Exeplo de App nativo criado com react Native Expo.
 - Instalação da lib `Axios`
 - Configuração/exportação do `services/api-moviedb.js` contendo a programação básica de acesso à API para uso em diferentes partes do app.
 
+#### Exibição dos resultados
+
+- Utilização do componente `FlatList` para listagem dinâmica dos resultados
+- Criação do componente `CardFilme` como uso de prop (`filme`) com carregamento do `title` e do `poster-path` (imagem) de cada filme.
+
 ## 05-desafio--tela-BuscarFilmes
 
 ### Solução: recursos utilizados
