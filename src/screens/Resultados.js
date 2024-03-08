@@ -1,4 +1,5 @@
 import { FlatList, Text, View } from "react-native";
+import CardFilme from "../components/CardFilme";
 import SafeContainer from "../components/SafeContainer";
 import { estilosInicio } from "../stylesheet/estilos";
 import { api, apiKey } from "../services/api-moviedb";
@@ -48,7 +49,7 @@ export default function Resultados({ route }) {
             keyExtractor={(item) => item.id}
             // Prop que irá renderizar cada item/filme em um componente
             renderItem={({ item }) => {
-              return <Text>{item.title}</Text>;
+              return <CardFilme filme={item} />;
             }}
           />
         </View>

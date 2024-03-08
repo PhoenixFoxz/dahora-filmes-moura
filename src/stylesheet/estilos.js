@@ -7,7 +7,6 @@ const estilosInicio = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-
   viewLogo: {
     flex: 0.7,
     alignItems: "center",
@@ -116,6 +115,44 @@ const estilosInicio = StyleSheet.create({
   },
   viewFilmes: {
     marginVertical: 8,
+  },
+  card: {
+    marginVertical: 4,
+    flexDirection: "row",
+    borderWidth: 2,
+    borderColor: "#5451a6",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  image: {
+    height: 150,
+    width: 100,
+    flex: 1,
+  },
+  corpo: {
+    flex: 2,
+  },
+  filmeTitulo: {
+    backgroundColor: "#5451a6",
+    color: "white",
+    textAlign: "center",
+    paddingVertical: 8,
+    fontSize: 16,
+  },
+  botoesCard: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    marginTop: 8,
+  },
+  botaoCard: {
+    borderColor: "#5451a6",
+    borderWidth: 1,
+    padding: 8,
+  },
+  textoBotaoCard: {
+    color: "#5451a6",
+    fontSize: 12,
+    textTransform: "uppercase",
   },
 });
 
