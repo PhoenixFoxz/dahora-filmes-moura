@@ -154,6 +154,11 @@ const estilosInicio = StyleSheet.create({
     fontSize: 12,
     textTransform: "uppercase",
   },
+  viewSeparador: {
+    marginVertical: 8,
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+  },
 });
 
 export { estilosInicio };
