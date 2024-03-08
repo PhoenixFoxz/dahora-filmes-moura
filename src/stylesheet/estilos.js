@@ -66,6 +66,7 @@ const estilosInicio = StyleSheet.create({
   subContainer: {
     flex: 1,
     padding: 16,
+    width: "100%",
   },
   subtitulo: {
     fontFamily: "NotoSans",
@@ -112,6 +113,9 @@ const estilosInicio = StyleSheet.create({
   viewForm: {
     flexDirection: "row",
     alignItems: "center",
+  },
+  viewFilmes: {
+    marginVertical: 8,
   },
 });
 
