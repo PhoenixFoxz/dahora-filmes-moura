@@ -4,9 +4,13 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import imagemAlternativa from "../../assets/images/foto-alternativa.jpg";
 
+/* Hook necessário pois não estamos em uma tela com acesso à prop navigation */
+import { useNavigation } from "@react-navigation/native";
+
 export default function CardFilme({ filme }) {
   /* Extraindo as informações do filme (titulo e imagem de capa) */
   const { title, poster_path } = filme;
+  const navigation = useNavigation();
   return (
     <View style={estilosInicio.card}>
       <Image
@@ -21,21 +25,20 @@ export default function CardFilme({ filme }) {
       <View style={estilosInicio.corpo}>
         <Text style={estilosInicio.filmeTitulo}> {title} </Text>
         <View style={estilosInicio.botoesCard}>
-          <Pressable style={estilosInicio.botaoCard}>
-            <Text style={estilosInicio.textoBotaoCard}>
-              <FontAwesome5 name="book-open" size={15} />
-              Leia mais
-            </Text>
+          <Pressable
+            style={estilosInicio.botaoCard}
+            onPress={() => navigation.navigate("Detalhes")}
+          >
+            <View style={styles.icones}>
+              <FontAwesome5 name="book-open" size={15} color="#5451a6" />
+              <Text style={estilosInicio.textoBotaoCard}>Leia mais</Text>
+            </View>
           </Pressable>
           <Pressable style={estilosInicio.botaoCard}>
-            <Text style={estilosInicio.textoBotaoCard}>
-              <MaterialIcons
-                style={styles.icones}
-                name="add-circle"
-                size={15}
-              />
-              Salvar
-            </Text>
+            <View style={styles.icones}>
+              <MaterialIcons name="add-circle" size={15} color="#5451a6" />
+              <Text style={estilosInicio.textoBotaoCard}>Salvar</Text>
+            </View>
           </Pressable>
         </View>
       </View>

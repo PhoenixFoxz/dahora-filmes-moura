@@ -2,6 +2,11 @@
 
 Exeplo de App nativo criado com react Native Expo.
 
+## 08-tela-de-detalhes-do-filme
+
+- Criação da tela `Detalhes.js` e adição dela à `Stack` em `App.js`
+- Em `CardFilme`, utilização do hook `useNavigation` para funcionalidade de navegação do botão **Leia mais**.
+
 ## 07-melhoria-nos-resultados
 
 - Loading usando `ActivityIndicator`

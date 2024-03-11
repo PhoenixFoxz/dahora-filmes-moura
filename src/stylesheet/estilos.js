@@ -154,11 +154,20 @@ const estilosInicio = StyleSheet.create({
     fontSize: 12,
     textTransform: "uppercase",
   },
+});
+const estiloSeparador = StyleSheet.create({
   viewSeparador: {
     marginVertical: 8,
     flexDirection: "row",
     justifyContent: "space-evenly",
   },
 });
+const estilosLoading = StyleSheet.create({
+  viewLoading: {
+    alignItems: "center",
+    flex: 1,
+    justifyContent: "center",
+  },
+});
 
-export { estilosInicio };
+export { estilosInicio, estilosLoading, estiloSeparador };

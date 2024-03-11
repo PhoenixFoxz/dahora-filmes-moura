@@ -49,7 +49,7 @@ export default function Resultados({ route }) {
           Você buscou por: <Text style={estilosInicio.nomeApp}>{filme}</Text>
         </Text>
 
-        {loading && <ActivityIndicator size="large" color="#5451a6" />}
+        {loading && <ActivityIndicator size="large" color="#5a51a6" />}
 
         {!loading && (
           <View style={estilosInicio.viewFilmes}>
