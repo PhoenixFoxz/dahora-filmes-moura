@@ -34,10 +34,14 @@ export default function Detalhes({ route }) {
                 {avaliacaoFormatada}
               </Text>
               <Text style={[estiloDetalhes.texto, estiloDetalhes.lancamento]}>
-                {dataFormatada}
+                Data: {dataFormatada || "indisponível"}
               </Text>
               <Text style={[estiloDetalhes.texto, estiloDetalhes.descricao]}>
-                {overview}
+                {overview || (
+                  <Text style={{ fontStyle: "italic" }}>
+                    Filme sem descrição
+                  </Text>
+                )}
               </Text>
             </View>
           </ScrollView>
