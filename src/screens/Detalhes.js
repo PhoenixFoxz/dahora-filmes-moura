@@ -8,9 +8,13 @@ import { format } from "date-fns";
 export default function Detalhes({ route }) {
   const { filme } = route.params;
   const { title, backdrop_path, overview, release_date, vote_average } = filme;
-  const dataFormatada = format(new Date(release_date), "dd/MM/yyyy", {
-    locale: ptBR,
-  });
+  const dataFormatada = format(
+    new Date(release_date || "2024-03-11"),
+    "dd/MM/yyyy",
+    {
+      locale: ptBR,
+    }
+  );
   const avaliacaoFormatada = vote_average.toFixed(1);
   return (
     <SafeContainer>
