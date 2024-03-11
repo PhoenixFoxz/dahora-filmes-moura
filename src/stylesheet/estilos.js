@@ -169,5 +169,35 @@ const estilosLoading = StyleSheet.create({
     justifyContent: "center",
   },
 });
+const estiloDetalhes = StyleSheet.create({
+  subContainer: {
+    flex: 1,
+    width: "100%",
+  },
+  imagemFundo: {
+    height: 200,
+    justifyContent: "center",
+  },
+  titulo: {
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    color: "white",
+    fontFamily: "NotoSans",
+    textAlign: "center",
+    padding: 16,
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  conteudo: {
+    padding: 16,
+    flex: 1 /* Apenas para garantir a ocupação do espaço em caso de texto muito grande */,
+  },
+  texto: {
+    paddingVertical: 4,
+    fontSize: 16,
+  },
+  avaliacao: { color: "blue" },
+  lancamento: { color: "darkblue" },
+  descricao: { color: "gray" },
+});
 
-export { estilosInicio, estilosLoading, estiloSeparador };
+export { estilosInicio, estilosLoading, estiloSeparador, estiloDetalhes };
