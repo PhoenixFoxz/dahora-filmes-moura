@@ -27,7 +27,7 @@ export default function CardFilme({ filme }) {
         <View style={estilosInicio.botoesCard}>
           <Pressable
             style={estilosInicio.botaoCard}
-            onPress={() => navigation.navigate("Detalhes")}
+            onPress={() => navigation.navigate("Detalhes", { filme })}
           >
             <View style={styles.icones}>
               <FontAwesome5 name="book-open" size={15} color="#5451a6" />

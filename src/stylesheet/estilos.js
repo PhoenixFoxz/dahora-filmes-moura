@@ -192,12 +192,24 @@ const estiloDetalhes = StyleSheet.create({
     flex: 1 /* Apenas para garantir a ocupação do espaço em caso de texto muito grande */,
   },
   texto: {
-    paddingVertical: 4,
+    paddingVertical: 6,
     fontSize: 16,
   },
-  avaliacao: { color: "blue" },
-  lancamento: { color: "darkblue" },
-  descricao: { color: "gray" },
+  avaliacao: {
+    color: "white",
+    fontSize: 40,
+    backgroundColor: "#5451a6",
+    borderRadius: 100,
+    padding: 5,
+  },
+  formatacao: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    flexWrap: "wrap",
+  },
+  lancamento: { color: "#5451a6" },
+  descricao: { color: "#5451a6" },
 });
 
 export { estilosInicio, estilosLoading, estiloSeparador, estiloDetalhes };

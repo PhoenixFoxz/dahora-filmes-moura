@@ -1,4 +1,4 @@
-import { ActivityIndicator, FlatList, Text, View } from "react-native";
+import { FlatList, Text, View } from "react-native";
 import CardFilme from "../components/CardFilme";
 import SafeContainer from "../components/SafeContainer";
 import { estilosInicio } from "../stylesheet/estilos";
@@ -6,6 +6,7 @@ import { api, apiKey } from "../services/api-moviedb";
 import { useEffect, useState } from "react";
 import Separador from "../components/Separador";
 import Vazio from "../components/Vazio";
+import Carregamento from "../components/Carregamento";
 
 /* Prop route
 Prop especial e definida pelo React Navigation.
@@ -49,7 +50,7 @@ export default function Resultados({ route }) {
           Você buscou por: <Text style={estilosInicio.nomeApp}>{filme}</Text>
         </Text>
 
-        {loading && <ActivityIndicator size="large" color="#5a51a6" />}
+        {loading && <Carregamento />}
 
         {!loading && (
           <View style={estilosInicio.viewFilmes}>
@@ -57,7 +58,11 @@ export default function Resultados({ route }) {
               data={resultados}
               keyExtractor={(item) => item.id}
               renderItem={({ item }) => {
-                return <CardFilme filme={item} />;
+                return (
+                  <>
+                    <CardFilme filme={item} />
+                  </>
+                );
               }}
               ListEmptyComponent={<Vazio pesquisado={filme} />}
               ItemSeparatorComponent={Separador}
