@@ -6,6 +6,7 @@ import imagemAlternativa from "../../assets/images/foto-alternativa.jpg";
 
 /* Hook necessário pois não estamos em uma tela com acesso à prop navigation */
 import { useNavigation } from "@react-navigation/native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function CardFilme({ filme }) {
   /* Extraindo as informações do filme (titulo e imagem de capa) */
@@ -13,7 +14,9 @@ export default function CardFilme({ filme }) {
   const navigation = useNavigation();
   const salvar = async () => {
     try {
-      /* 1) Verificar/carregar os favoritos armazenados no AsyncStorage */
+      /* 1) Verificar/carregar os favoritos armazenados no AsyncStorage.
+      Usamos o getItem do AsyncStorage para analisar se existe um armazenamento com o nome indicado (@favoritosmoura). Existendo, ele é carregado para a const filmesFavoritos. Se não existir, será criado posteriormente */
+      const filmesFavoritos = await AsyncStorage.getItem("@favoritosmoura");
       /* 2) Verificar/criar uma lista de filmes favoritos (dados) */
       /* 3) Verificar se já tem algum filme na lista */
       /* 4) Se o filme não estiver na lista, então vamos colocá-lo */
