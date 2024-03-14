@@ -33,7 +33,10 @@ export default function Home({ navigation }) {
             <Text style={estilosInicio.textoBotao}>Buscar Filmes</Text>
           </View>
         </Pressable>
-        <Pressable style={estilosInicio.botao}>
+        <Pressable
+          style={estilosInicio.botao}
+          onPress={() => navigation.navigate("Favoritos")}
+        >
           <View
             style={{
               flexDirection: "row",

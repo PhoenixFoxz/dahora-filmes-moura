@@ -211,5 +211,21 @@ const estiloDetalhes = StyleSheet.create({
   lancamento: { color: "#5451a6" },
   descricao: { color: "#5451a6" },
 });
+const estiloFavoritos = StyleSheet.create({
+  subContainer: {
+    flex: 1,
+    padding: 16,
+    width: "100%",
+  },
+  texto: {
+    marginVertical: 8,
+  },
+});
 
-export { estilosInicio, estilosLoading, estiloSeparador, estiloDetalhes };
+export {
+  estilosInicio,
+  estilosLoading,
+  estiloSeparador,
+  estiloDetalhes,
+  estiloFavoritos,
+};

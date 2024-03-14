@@ -7,6 +7,7 @@ import Privacidade from "./src/screens/Privacidade";
 import Filmes from "./src/screens/Filmes";
 import Resultados from "./src/screens/Resultados";
 import Detalhes from "./src/screens/Detalhes";
+import Favoritos from "./src/screens/Favoritos";
 
 // Criação/inicialização do mecanismo Stack
 const Stack = createNativeStackNavigator();
@@ -55,6 +56,7 @@ export default function App() {
               };
             }}
           />
+          <Stack.Screen name="Favoritos" component={Favoritos} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
