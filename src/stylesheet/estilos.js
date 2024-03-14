@@ -210,6 +210,10 @@ const estiloDetalhes = StyleSheet.create({
   },
   lancamento: { color: "#5451a6" },
   descricao: { color: "#5451a6" },
+  semDescricao: {
+    fontStyle: "italic",
+    flexWrap: "wrap",
+  },
 });
 const estiloFavoritos = StyleSheet.create({
   subContainer: {

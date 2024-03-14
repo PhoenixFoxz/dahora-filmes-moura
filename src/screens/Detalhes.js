@@ -41,7 +41,9 @@ export default function Detalhes({ route }) {
               </Text>
               <Text style={[estiloDetalhes.texto, estiloDetalhes.descricao]}>
                 {overview || (
-                  <Text style={{ fontStyle: "italic", paddingLeft: 50 }}>
+                  <Text
+                    style={[estiloDetalhes.texto, estiloDetalhes.semDescricao]}
+                  >
                     Filme sem descrição
                   </Text>
                 )}
