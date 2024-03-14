@@ -7,11 +7,13 @@ Exeplo de App nativo criado com react Native Expo.
 - Criação da tela `Detalhes.js` e adição dela à `Stack` em `App.js`
 - Em `CardFilme`, utilização do hook `useNavigation` para funcionalidade de navegação do botão **Leia mais**.
 
+- Em `App.js` na `Stack.Screen Detalhes`, adicionamos uma prop `options` configurada para exibir um `button` responsável por permitir a navegação direta para `Home`.
+
 ## 07-melhoria-nos-resultados
 
 - Loading usando `ActivityIndicator`
 - Em `Resultados`, aplicamos à `FlatList` componentes personalizados para o caso de não haver filmes na busca (`NaoEncontrado/ListEmptyComponent`) e para separar cada elemento da `FlatList` (`Separador/ItemSeparatorComponent`)
-- Em `CardFilme` colocamos uma condicional para o carregamento de imagem alternativa caso algum filme não tenha imagem, e também ícones nos botões. 
+- Em `CardFilme` colocamos uma condicional para o carregamento de imagem alternativa caso algum filme não tenha imagem, e também ícones nos botões.
 
 ## 06-tela-de-resultados-e-programação-api
 

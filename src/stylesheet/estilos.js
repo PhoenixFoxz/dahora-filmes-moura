@@ -205,7 +205,7 @@ const estiloDetalhes = StyleSheet.create({
   formatacao: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-evenly",
+    justifyContent: "space-around",
     flexWrap: "wrap",
   },
   lancamento: { color: "#5451a6" },
