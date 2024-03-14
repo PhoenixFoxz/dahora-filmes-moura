@@ -1,4 +1,4 @@
-import { StyleSheet, Image, Pressable, Text, View } from "react-native";
+import { StyleSheet, Image, Pressable, Text, View, Alert } from "react-native";
 import { estilosInicio } from "../stylesheet/estilos";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -11,6 +11,9 @@ export default function CardFilme({ filme }) {
   /* Extraindo as informações do filme (titulo e imagem de capa) */
   const { title, poster_path } = filme;
   const navigation = useNavigation();
+  const salvar = async () => {
+    Alert.alert("Favoritos", "Salvando...");
+  };
   return (
     <View style={estilosInicio.card}>
       <Image
@@ -34,7 +37,7 @@ export default function CardFilme({ filme }) {
               <Text style={estilosInicio.textoBotaoCard}>Leia mais</Text>
             </View>
           </Pressable>
-          <Pressable style={estilosInicio.botaoCard}>
+          <Pressable style={estilosInicio.botaoCard} onPress={salvar}>
             <View style={styles.icones}>
               <MaterialIcons name="add-circle" size={15} color="#5451a6" />
               <Text style={estilosInicio.textoBotaoCard}>Salvar</Text>

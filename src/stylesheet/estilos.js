@@ -212,7 +212,7 @@ const estiloDetalhes = StyleSheet.create({
   descricao: { color: "#5451a6" },
   semDescricao: {
     fontStyle: "italic",
-    flexWrap: "wrap",
+    fontSize: 19,
   },
 });
 const estiloFavoritos = StyleSheet.create({
