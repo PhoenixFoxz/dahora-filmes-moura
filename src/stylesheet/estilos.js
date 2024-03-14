@@ -224,6 +224,19 @@ const estiloFavoritos = StyleSheet.create({
   texto: {
     marginVertical: 8,
   },
+  viewFavoritos: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 8,
+  },
+  botaoExcluirFavoritos: {
+    borderWidth: 1,
+    borderColor: "red",
+    padding: 8,
+    borderRadius: 4,
+  },
+  textoBotao: { color: "red" },
 });
 
 export {
