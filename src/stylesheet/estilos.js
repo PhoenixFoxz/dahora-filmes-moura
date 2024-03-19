@@ -224,6 +224,45 @@ const estiloFavoritos = StyleSheet.create({
   texto: {
     marginVertical: 8,
   },
+  botao: {
+    borderWidth: 1,
+    borderColor: "red",
+    padding: 8,
+    borderRadius: 4,
+  },
+  textoBotao: {
+    color: "red",
+  },
+  imagem: {
+    height: 170,
+    width: 110,
+    alignSelf: "center",
+  },
+  cardFavorito: {
+    padding: 8,
+    justifyContent: "space-between",
+    backgroundColor: "#eee8fc",
+    marginBottom: 8,
+    borderRadius: 4,
+    alignItems: "center",
+    flex: 1,
+  },
+  cardTitulo: {
+    width: 300,
+    margin: 8,
+    textAlign: "center",
+    alignSelf: "center",
+  },
+  excluir: {
+    backgroundColor: "darkred",
+    padding: 12,
+    borderRadius: 4,
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  textoExcluir: {
+    color: "#f7f7f7",
+  },
   viewFavoritos: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -236,7 +275,12 @@ const estiloFavoritos = StyleSheet.create({
     padding: 8,
     borderRadius: 4,
   },
-  textoBotao: { color: "red" },
+  viewFavoritos: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 8,
+  },
 });
 
 export {
